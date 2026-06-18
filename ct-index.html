@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Convertisseur de tailles vêtements/chaussures US EU UK | Homme Femme Enfant</title>
+        <meta name="description" content="Convertissez facilement vos tailles de vêtements et chaussures entre les systèmes US, UK et EU. Outil gratuit pour homme, femme et enfant.">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+
+        <link rel="stylesheet"  href="ct-style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>LOGO</h1>
+            <div id="types">
+                <button id="haut" onclick="choisirType('haut', 'haut') " class="typeC">Haut</button>
+                <button  id="bas" onclick="choisirType('bas','bas' )" class="typeC">Bas</button>
+                <button  id ="chaussure" onclick="choisirType('chaussure', 'chaussure')" class="typeC">Chaussures</button>
+            </div>
+            
+            <select id="select-langues">
+                <option>Français</option>
+                <option>🇺🇸 English</option>
+                <option>Spanish</option>
+            </select>
+        </header>
+
+        <main>
+            <section>
+
+            </section>
+            
+            <section id="principal">
+                <div>
+                    <h2>Convertisseur taille vêtements</h2>
+                </div>
+                <div id="div-genre">
+                    <p class="indication">Genre</p>
+                    <button id="boutton-homme" onclick="genre('homme', 'boutton-homme')" class="genreC">Homme</button>
+                    <button id="boutton-femme" onclick="genre('femme', 'boutton-femme')" class="genreC">Femme</button>
+                    <button id="boutton-enfant" onclick="genre('enfant', 'boutton-enfant')" class="genreC">Enfant</button>
+                </div>
+
+                <div id="div-origine">
+                    <article>
+                    <p class="indication">Pays d'origine</p>
+
+                    <select id="select-origine">
+                        <option>🇺🇸 Etats-Unis</option>
+                        <option>🇪🇺 Union Européenne</option>
+                        <option>🇬🇧 Royaume-Uni</option>
+                    </select>
+                    </article>
+
+                    <article>
+                    <p class="indication">Taille</p>
+                    <select id="select-taille">
+
+                    </select>
+                    </article>
+                </div>
+
+                
+                <div>
+                    <p class="indication">Pays cible</p>
+                    <select id="pays-arrivee">
+                        <option>🇺🇸 Etats-Unis</option>
+                        <option>🇪🇺 Union Européenne</option>
+                        <option>🇬🇧 Royaume-Uni</option>
+                    </select>
+                </div>
+
+                <div id="div-calculer">
+                    <button onclick="calcul()">Calculer</button>
+                </div>
+
+                <div id="div-resultat">
+                    <p class="indication">Taille équivalente</p>
+                    <h3 id="resultat">entrer la taille</h3>
+                    <p id="warning">Les correspondances de tailles peuvent varier selon les marques</p>
+
+                </div>
+                
+            </section>
+
+            <section>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <a>Mentions légales</a>
+            <a>Contact</a>
+
+        </footer>
+        <script src="ct-script.js"></script>
+    </body>
+</html>
